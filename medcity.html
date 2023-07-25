@@ -1,0 +1,337 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task_7</title>
+    <style>
+        *{
+            margin: 0px;
+        }
+        .mad{ 
+            margin: 0px;
+            display: flex;
+            justify-content: center;
+            background-color: cadetblue;
+            padding: 30px;
+        }
+        .box{
+            border: 1px solid black;
+            border-radius: 5px;
+            width: 350px;
+            height: 300px;
+            float: right;
+            background: whitesmoke;
+            padding: 10px;
+        }
+        .sub{
+            width: 300px;
+            height: 300px;
+            float: left;
+            color: aliceblue;
+            margin-top: 40px;
+        }
+        em{
+            color: green;
+            font-weight: bold;
+        }
+        .number{
+            color: blue;
+        }
+        .dabba{
+            width: 200px;
+            height: 300px;
+            text-align: center;
+            color: aliceblue;
+            margin-top: 40px;
+        }
+        .button{
+            width: 200px;
+            height: 300px;
+            color: aliceblue;
+            margin-top: 40px;
+        }
+        a:hover{
+            text-decoration-line: underline;
+            text-decoration-style: solid;
+            color: blue;
+            cursor: pointer;
+        }
+        .footer{
+            text-align: center;
+            padding: 10px;
+        }
+        nav{
+            height: 50px;
+            text-align: center;
+            padding-top: 5px;
+            position: sticky;
+            top: 0px;
+            background: azure;
+        }
+        
+        button{
+            padding: 13px;
+            border-radius: 50px;
+            background: aqua;
+            border: 0px;
+        }
+    
+        .h3{
+            display: inline-block;
+            font-family: fantasy;
+        }
+        select{
+            border: none; 
+        }
+        select:hover{
+            cursor: pointer;
+            background: aqua;
+            padding: 5px;
+        }
+        .warrior{
+            text-align: center;
+            background: rgb(221, 234, 240);
+        }
+        .shubh{
+            text-align: center;
+            padding: 40px;
+        }
+        .labh{
+            margin: 10px;
+            padding: 5px;
+            height: 250px;
+        }
+        .teja{
+            margin-left: 80px;
+             border: 3px solid rgb(91, 181, 216);
+              padding: 10px;
+               border-radius: 5px;
+               width: 60%;
+               color: rgb(91, 181, 216);
+        }
+        .teja:hover{
+            cursor: pointer;
+            background-color: rgb(91, 181, 216);
+            color: green;
+        }
+        input{
+            width: 100%;
+            margin: 5px;
+            padding: 5px;
+        }
+        .aayush,.youth,.medicine{
+            display: flex;
+            justify-content: center;
+        }
+        .aayush{
+         background: rgb(221, 234, 240);
+        }
+        textarea{
+            margin: 5px;
+            width: 100%;
+        }
+        .youth{
+            height: 400px;
+            background: cadetblue;
+        }
+        .queue{
+            margin: 60px;
+            color: white;
+        list-style-type: none;
+
+        }
+        .war{
+            margin-top: 20px;
+            color: white;
+            margin-top: 60px;
+        }
+        .medicine{
+            background: cadetblue;
+            margin: 0px;
+            padding: 0px;
+            transition: height 3s;
+        }
+        .bomb,.sutli,.dyanamite,.chhuri{
+            width: 250px;
+            height: 300px;
+            border: black;
+            background: rgb(255, 255, 255);
+            border-radius: 5px;
+            margin: 5px;
+            transition: 0.3s;
+        }
+        .chhuri:hover{
+            transform: translate(0, -30px);
+        }
+        .dyanamite:hover{
+            transform: translate(0, -30px);
+        }
+        .sutli:hover{
+            transform: translate(0, -30px);
+        }
+        .bomb:hover{
+            transform: translate(0, -30px);
+        }
+header{
+    background-image: url(sun.jpg);
+    width: 100%;
+    height: 400px;
+    color: white;
+    text-align: center;
+  
+}
+    </style>
+    <script src="https://kit.fontawesome.com/39f981661a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<header>
+
+     
+    <nav>
+        <h3 class="h3"><i class="fab fa-pagelines" style="margin-right: 4px; font-size: 30px;"></i>Medcity</h3>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;
+   <select name="Home" id="name">
+   <em><option value="Home">Home</option></em>
+    <option value="info">info</option>
+    <option value="groups">groups</option>
+</select>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <select name="About Us" id="name">
+        <option value="About Us">About Us</option>
+        <option value="info">info</option>
+        <option value="Website">Website</option>
+    </select>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <select name="Doctors" id="name">
+        <option value="Doctors">Doctors</option>
+        <option value="Patho">Patho</option>
+        <option value="Cardio">Cardio</option>
+        <option value="Neuro">Neuro</option>
+        <option value="Padiatric">Padiatric</option>
+        <option value="Cardiac">Cardiac</option>
+    </select>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <select name="Blog" id="name">
+        <option value="Blog">Blog</option>
+    </select>&nbsp;&nbsp;&nbsp;
+    <select name="Shop" id="name">
+        <option value="Shop">Shop</option>
+        <option value="quality">quality</option>
+        <option value="Price">Price</option>
+    </select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Contacts&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-bars" style="margin-right: 4px;">
+</i>Departments
+&nbsp;&nbsp;&nbsp;&nbsp;
+<button><i class="far fa-calendar-minus" style="margin-right: 4px;"></i>Appointment</button></nav>
+<h1 style="padding-top:140px;">Welcome to Medcity</h1>
+</header>
+<main>
+   <div class="youth">
+       <div class="war"><p><em>Caring For the Health of You And Your Family</em></p>
+    <h2>We Provide All Aspects<br> Of Medical Practices For <br>Your Whole Family!</h2></div>
+    <div class="queue"><p>We will work with you to develop individualised care plans, including<br> management of chronic diseases.
+         If we cannot assist, we can provide referrals<br> or advice 
+        about the type of practitioner you require. We treat all enquires<br> sensitvely and in the strictest cinfidence.</p><br><br>
+        <ul>
+<i class="fas fa-check-circle" style="color: darkblue;margin: 5px;"></i>Fractures and dislocations<br>
+<i class="fas fa-check-circle" style="color: darkblue;margin: 5px;"></i>Desensitisation Injections<br>
+<i class="fas fa-check-circle" style="color: darkblue;margin: 5px;"></i>Health Assessments<br>
+<i class="fas fa-check-circle" style="color: darkblue;margin: 5px;"></i>High quality care<br>
+        </ul></div>
+    </div>
+<div class="medicine">
+<div class="bomb"><h1 style="color: rgb(216, 205, 205); text-align: right; font-size: 60px;margin-top: 5px;margin-right: 30px;"">
+    <i class="fas fa-clipboard-list" style="margin-right: 50px; margin-top: 5px; color: rgb(26, 21, 21);"></i>01</h1>
+    <p><h3 style="color: rgb(2, 2, 56); padding-left: 15px;">Fill In Our Medical Application</h3></p>
+    <p style="padding-left: 15px;">Medcity offers low-cost health coverage for adults with limited income, you can enroll.</p>
+<h4 style="color: rgb(2, 2, 56); padding-left: 15px;">Doctors' Timetable<i class="fas fa-arrow-right" style="padding-left: 2px;"></i>
+</h4></div>
+<div class="sutli"><h1 style="color: rgb(216, 205, 205); text-align: right; font-size: 60px;margin-top: 5px;margin-right: 30px;"">
+    <i class="fas fa-dna" style="margin-right: 50px; margin-top: 5px; color: rgb(26, 21, 21);"></i>02</h1>
+    <p><h3 style="color: rgb(2, 2, 56); padding-left: 15px;">Review Your Family Medical History</h3></p>
+    <p style="padding-left: 15px;">Regular health exams can help find all the problems, also can find it early chances.</p>
+<h4 style="color: rgb(2, 2, 56); padding-left: 15px;">Start A Check Up<i class="fas fa-arrow-right" style="padding-left: 2px;"></i>
+</h4></div>
+<div class="dyanamite"><h1 style="color: rgb(216, 205, 205); text-align: right; font-size: 60px;margin-top: 5px;margin-right: 30px;"">
+    <i class="fas fa-prescription-bottle-alt"style="margin-right: 50px; margin-top: 5px; color: rgb(26, 21, 21);"></i>03</h1>
+    <p><h3 style="color: rgb(2, 2, 56); padding-left: 15px;">Choose Between Our Care Programs</h3></p>
+    <p style="padding-left: 15px;">We have protocols to protect our patients while continuing to provide necessary care.</p>
+<h4 style="color: rgb(2, 2, 56); padding-left: 15px;">Explore Programs<i class="fas fa-arrow-right" style="padding-left: 2px;"></i>
+</h4></div>
+<div class="chhuri"><h1 style="color: rgb(216, 205, 205); text-align: right; font-size: 60px;margin-top: 5px; margin-right: 30px;">
+    <i class="fas fa-stethoscope" style="margin-right: 50px; margin-top: 5px; color: rgb(26, 21, 21);"></i>04</h1>
+    <p><h3 style="color: rgb(2, 2, 56); padding-left: 15px;">Introduce You To Highly Qualified Doctors</h3></p>
+    <p style="padding-left: 15px;">Our administration and support staff have exceptional skills and trained to assist you.</p>
+<h4 style="color: rgb(2, 2, 56); padding-left: 15px;">Meet Our Doctors<i class="fas fa-arrow-right" style="padding-left: 2px;"></i>
+</h4></div>
+</div>
+   <section><div class="warrior">
+        <h2>Contact</h2><br>
+        if any query, you may contact us or leave us a message.<br><br><br>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d28063.998277835602!2d77.67907453462897!3d28.44942287936135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1620831362628!5m2!1sen!2sin" width="80%
+    " height="300" style="border:0; border-radius: 5px;" allowfullscreen="" loading="lazy"></iframe></div>
+    </section>
+  <div class="aayush">
+<div class="shubh">
+    <i class="fas fa-map-marker-alt" style="color: blue;margin-right: 5px;font-size: 20px;"></i> organisation address<br>address
+   <h3><i class="fas fa-phone-alt" style="color: blue;margin-right: 5px;"></i><em>+1555123456</em></h3><br>
+   <i class="fab fa-google-plus-g" style="font-size: 30px;"></i>&nbsp;&nbsp;&nbsp;
+   <i class="fab fa-twitter-square" style="font-size: 30px;"></i>&nbsp;&nbsp;&nbsp;
+   <i class="fab fa-facebook" style="font-size: 30px;"></i>&nbsp;&nbsp;&nbsp; 
+    <i class="fab fa-instagram" style="font-size: 30px;"></i>&nbsp;&nbsp;&nbsp;
+    <i class="fab fa-linkedin" style="font-size: 30px;"></i>
+</div>
+<div class="labh">
+    <input type="text" name="name" placeholder="Your Name" id="name"><br>
+    <input type="email" name="email" placeholder="Your Email" id="email"><br>
+    <input type="text" name="subject" placeholder="Subject" id="subject"><br>
+    <textarea cols="52" rows="4">Message</textarea><br>
+    <input type="button" value="Send Message" class="teja">
+</div>
+</div>
+</main>
+    <footer>
+    <div class="mad">
+<div class="sub"><h2><i class="fab fa-pagelines" style="margin-right: 4px; font-size: 35px; color: rgb(17, 15, 15);"></i>Medcity</h2>
+<p>Our goal is to deliver quality of care in a courteous,respectful,and compassionate manner. We hope you
+will allow us to care for you and strive to be the first and best choice for your family healthcare</p>
+<em>Make Appointments<i class="fas fa-arrow-right" style="padding-left: 2px;"></i></em>
+</div>
+<div class="dabba"><h2>Deparments</h2>
+    <a>Neurology Clinic</a><br>
+    <a>Cardilogy Clinic</a><br>
+    <a>Pathology Clinic</a><br>
+    <a>Laboratory Analysis</a><br>
+   <a>Padiatric Clinic</a><br>
+   <a>Cardiac Clinic</a></div>
+    <div class="button"><h2>Links</h2>
+    <a>About Us</a><br>
+    <a>Our Clinic</a><br>
+    <a>Our Doctors</a><br>
+    <a>News & Media</a><br>
+    <a>Appointments</a></div>
+    <div class="box"><h2>Quick Contacts</h2>
+        <p>if you have any questions or need help free to contact with our team</p>
+    <h2 class="number"><i class="fas fa-phone-alt" style="margin-right: 7px;"></i>0106124551</h2>
+    <p>2307 Beverly Rd Brooklyn, New York 11226 United States.</p>
+    <em> <i class="fas fa-arrow-right" style="padding-left: 2px;"></i>&nbsp;&nbsp;Get Directions</em>&nbsp;&nbsp;
+    <i class="fab fa-instagram" style="font-size: 30px; margin-left: 4px;"></i>&nbsp;&nbsp;&nbsp;
+    <i class="fab fa-facebook" style="font-size: 30px;"></i>&nbsp;&nbsp;&nbsp;
+    <i class="fab fa-twitter-square" style="font-size: 30px;"></i>
+</div></div>
+    <div class="footer">&copy: 2020 DataSoft, All Rights Reserved.With Love by <em>7oroof.com</em>&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   Terms & Conditions&nbsp;&nbsp;&nbsp; Privacy Policy&nbsp;&nbsp;&nbsp; Cookies &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   <i class="fas fa-arrow-circle-up" style="color: aqua; font-size: 30px; margin-right: 10px;"></i></div></footer>
+</body>
+</html>
